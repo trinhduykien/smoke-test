@@ -1,0 +1,583 @@
+{
+  "pfts": {
+    "code": "000",
+    "maBhType": "array",
+    "maBhLen": 5,
+    "first": {
+      "MA": "*",
+      "TEN": "Tất cả"
+    },
+    "keys": [
+      "MA",
+      "TEN"
+    ]
+  },
+  "findNG": [
+    {
+      "status": 200,
+      "ct": "text/html; charset=utf-8",
+      "code": "000",
+      "dviQly": [
+        {
+          "MA": "",
+          "XEP": "",
+          "TEN": "",
+          "TEN_E": "",
+          "TEN_TAT": "Tất cả",
+          "DCHI": null
+        },
+        {
+          "MA": "TCT",
+          "XEP": "--TCT               ",
+          "TEN": "TỔNG CÔNG TY CỔ PHẦN BẢO HIỂM PETROLIMEX",
+          "TEN_E": "PETROLIMEX INSURANCE CORPORATION",
+          "TEN_TAT": "TCT  | TCT-Văn phòng TCT",
+          "DCHI": "Tầng 21, 22 tòa nhà MIPEC TOWER, số 229 phố Tây Sơn, Phường Kim Liên, Thành phố Hà Nội"
+        },
+        {
+          "MA": "AGI",
+          "XEP": "--AGI               ",
+          "TEN": "Công ty bảo hiểm PJICO An Giang",
+          "TEN_E": "PJICO AN GIANG INSURANCE COMPANY",
+          "TEN_TAT": "AGI  | AGI-An Giang",
+          "DCHI": "140/2A Nguyễn Thái Học, Phường Long Xuyên, Tỉnh An Giang"
+        },
+        {
+          "MA": "BDA",
+          "XEP": "--BDA               ",
+          "TEN": "Công ty bảo hiểm PJICO Bạch Đằng",
+          "TEN_E": "PJICO BACH DANG INSURANCE COMPANY",
+          "TEN_TAT": "BDA  | BDA-Bạch Đằng",
+          "DCHI": "Tầng 3, Tòa nhà số 14,  Đường Võ Nguyên Giáp, Phường An Biên, Thành phố Hải Phòng "
+        },
+        {
+          "MA": "BDI",
+          "XEP": "--BDI               ",
+          "TEN": "Công ty bảo hiểm PJICO Bình Định",
+          "TEN_E": "PJICO BINH DINH INSURANCE COMPANY",
+          "TEN_TAT": "BDI  | BDI-Bình Định",
+          "DCHI": "14 Trường Chinh, Phường Quy Nhơn, Tỉnh Gia Lai"
+        },
+        {
+          "MA": "BDU",
+          "XEP": "--BDU               ",
+          "TEN": "Công ty bảo hiểm PJICO Bình Dương",
+          "TEN_E": "PJICO BINH DUONG INSURANCE COMPANY",
+          "TEN_TAT": "BDU  | BDU-Bình Dương",
+          "DCHI": "Số 465 Lê Phong Hồng, Phường Phú Lợi, Thành phố Hồ Chí Minh"
+        },
+        {
+          "MA": "BGI",
+          "XEP": "--BGI               ",
+          "TEN": "Công ty bảo hiểm PJICO Bắc Giang",
+          "TEN_E": "PJICO BAC GIANG INSURANCE COMPANY",
+          "TEN_TAT": "BGI  | BGI-Bắc Giang",
+          "DCHI": "Thửa đất 80+81 - N19, KDC mới số 1, Đường Nguyễn Thị Minh Khai, Phường Bắc Giang, Tỉnh Bắc Ninh."
+        },
+        {
+          "MA": "BLI",
+          "XEP": "--BLI               ",
+          "TEN": "Công ty bảo hiểm PJICO Bạc Liêu",
+          "TEN_E": "PJICO BAC LIEU INSURANCE COMPANY",
+          "TEN_TAT": "BLI  | BLI-Bạc Liêu",
+          "DCHI": "Số 7 Lô C, Đường Tôn Đức Thắng, Khóm 7, Phường 1, Tp. Bạc Liêu, tỉnh Bạc Liêu"
+        },
+        {
+          "MA": "BNI",
+          "XEP": "--BNI               ",
+          "TEN": "Công ty bảo hiểm PJICO Bắc Ninh",
+          "TEN_E": "PJICO BAC NINH INSURANCE COMPANY",
+          "TEN_TAT": "BNI  | BNI-Bắc Ninh",
+          "DCHI": "Số 10, Lô E, Phố Dã Tượng, P. Suối Hoa, TP. Bắc Ninh, Tỉnh Bắc Ninh"
+        },
+        {
+          "MA": "BPH",
+          "XEP": "--BPH               ",
+          "TEN": "Công ty bảo hiểm PJICO Bình Phước",
+          "TEN_E": "PJICO BINH PHUOC INSURANCE COMPANY",
+          "TEN_TAT": "BPH  | BPH-Bình Phước",
+          "DCHI": "Số 19 Đường Trần Hưng Đạo, , P.Tân Phú, Thị Xã Đồng Xoài, Tỉnh Bình Phước"
+        },
+        {
+          "MA": "BTA",
+          "XEP": "--BTA               ",
+          "TEN": "Công ty bảo hiểm PJICO Bến Thành",
+          "TEN_E": "PJICO BEN THANH INSURANCE COMPANY",
+          "TEN_TAT": "BTA  | BTA-Bến Thành",
+          "DCHI": "Lầu 5 Toà nhà VFC, 29 Tôn Đức Thắng, P. Bến Nghé, Q1, Tp. HCM"
+        },
+        {
+          "MA": "BTH",
+          "XEP": "--BTH               ",
+          "TEN": "Công ty bảo hiểm PJICO Bình Thuận",
+          "TEN_E": "PJICO BINH THUAN INSURANCE COMPANY",
+          "TEN_TAT": "BTH  | BTH-Bình Thuận",
+          "DCHI": "284 Đường 19/4, Phường Xuân An, TP. Phan Thiết, Tỉnh Bình Thuận"
+        },
+        {
+          "MA": "CMA",
+          "XEP": "--CMA               ",
+          "TEN": "Công ty bảo hiểm PJICO Cà Mau",
+          "TEN_E": "PJICO CA MAU INSURANCE COMPANY",
+          "TEN_TAT": "CMA  | CMA-Cà Mau",
+          "DCHI": "Số 291, Lý Thường Kiệt, Phường Tân Thành, Tỉnh Cà Mau"
+        },
+        {
+          "MA": "CTH",
+          "XEP": "--CTH               ",
+          "TEN": "Công ty bảo hiểm PJICO Cần Thơ",
+          "TEN_E": "PJICO CAN THO INSURANCE COMPANY",
+          "TEN_TAT": "CTH  | CTH-Cần Thơ",
+          "DCHI": "Số 110, đường Cách Mạng Tháng 8, phường Cái Khế, thành phố Cần Thơ"
+        },
+        {
+          "MA": "DDO",
+          "XEP": "--DDO               ",
+          "TEN": "Công ty bảo hiểm PJICO Đông Đô",
+          "TEN_E": "PJICO DONG DO INSURANCE COMPANY",
+          "TEN_TAT": "DDO  | DDO-Đông Đô",
+          "DCHI": "Tầng 2, Tầng 3­ Tòa nhà số 188 Trường Chinh, Phường Kim Liên, Thành phố Hà Nội"
+        },
+        {
+          "MA": "DGT",
+          "XEP": "--DGT               ",
+          "TEN": "Tổng Công ty cổ phần Bảo hiểm Petrolimex – Chi nhánh PJICO Digital",
+          "TEN_E": "PJICO Digital",
+          "TEN_TAT": "DGT  | PJICO Digital",
+          "DCHI": "số 9 ngõ 84 phố Ngọc Khánh, Phường Giảng Võ, Thành phố Hà Nội, Việt Nam"
+        },
+        {
+          "MA": "DLA",
+          "XEP": "--DLA               ",
+          "TEN": "Công ty bảo hiểm PJICO Đắk Lắk",
+          "TEN_E": "PJICO DAK LAK INSURANCE COMPANY",
+          "TEN_TAT": "DLA  | DLA-Đắk Lắk",
+          "DCHI": "37 Trường Chinh, Phường Tân Lợi, TP.Buôn Ma Thuột, Tỉnh Đắk Lắk, Việt Nam"
+        },
+        {
+          "MA": "DNA",
+          "XEP": "--DNA               ",
+          "TEN": "Công ty bảo hiểm PJICO Đà Nẵng",
+          "TEN_E": "PJICO DA NANG INSURANCE COMPANY",
+          "TEN_TAT": "DNA  | DNA-Đà Nẵng",
+          "DCHI": "150 Nguyễn Tri Phương, Phường Chính Gián, Quận Thanh Khê, Tỉnh Đà Nẵng, Việt Nam"
+        },
+        {
+          "MA": "DNI",
+          "XEP": "--DNI               ",
+          "TEN": "Công ty bảo hiểm PJICO Đồng Nai",
+          "TEN_E": "PJICO DONG NAI INSURANCE COMPANY",
+          "TEN_TAT": "DNI  | DNI-Đồng Nai",
+          "DCHI": "117 Hà Huy Giáp, Phường Trấn Biên, Tỉnh Đồng Nai"
+        },
+        {
+          "MA": "DSG",
+          "XEP": "--DSG               ",
+          "TEN": "Công ty bảo hiểm PJICO Đông Sài Gòn",
+          "TEN_E": "PJICO DONG SAI GON INSURANCE COMPANY",
+          "TEN_TAT": "DSG  | DSG-Đông Sài Gòn",
+          "DCHI": "Số nhà 174 đường Hoa Lan (Khu Dân Cư Rạch Miễu), Phường Cầu Kiệu, Thành phố Hồ Chí Minh"
+        },
+        {
+          "MA": "DTH",
+          "XEP": "--DTH               ",
+          "TEN": "Công ty bảo hiểm PJICO Đồng Tháp",
+          "TEN_E": "PJICO DONG THAP INSURANCE COMPANY",
+          "TEN_TAT": "DTH  | DTH-Đồng Tháp",
+          "DCHI": "Số 210 Ngô Thì Nhậm, phường Cao Lãnh, tỉnh Đồng Tháp"
+        },
+        {
+          "MA": "GDI",
+          "XEP": "--GDI               ",
+          "TEN": "Công ty bảo hiểm PJICO Gia Định",
+          "TEN_E": "PJICO GIA DINH INSURANCE COMPANY",
+          "TEN_TAT": "GDI  | GDI-Gia Định",
+          "DCHI": "104A Hoàng Hoa Thám, Phường Gia Định, Tp.HCM"
+        },
+        {
+          "MA": "GLA",
+          "XEP": "--GLA               ",
+          "TEN": "Công ty bảo hiểm PJICO Gia Lai",
+          "TEN_E": "PJICO GIA LAI INSURANCE COMPANY",
+          "TEN_TAT": "GLA  | GLA-Gia Lai",
+          "DCHI": "231 Lý Thái Tổ, Phường Diên Hồng, Tỉnh Gia Lai."
+        },
+        {
+          "MA": "HBI",
+          "XEP": "--HBI               ",
+          "TEN": "Công ty bảo hiểm PJICO Hòa Bình",
+          "TEN_E": "PJICO HOA BINH INSURANCE COMPANY",
+          "TEN_TAT": "HBI  | GLA-HOA BINH",
+          "DCHI": "Số nhà 219, Đường Trần Hưng Đạo, Tổ 6, Phường Hòa Bình, Tỉnh Phú Thọ"
+        },
+        {
+          "MA": "HDU",
+          "XEP": "--HDU               ",
+          "TEN": "Công ty bảo hiểm PJICO Hải Dương",
+          "TEN_E": "PJICO HAI DUONG INSURANCE COMPANY",
+          "TEN_TAT": "HDU  | HDU-Hải Dương",
+          "DCHI": "Số 273 Đường Hoàng Quốc Việt, Phường Lê Thanh Nghị, Thành phố Hải Phòng"
+        },
+        {
+          "MA": "HGI",
+          "XEP": "--HGI               ",
+          "TEN": "Công ty bảo hiểm PJICO Hà Giang",
+          "TEN_E": "PJICO HA GIANG INSURANCE COMPANY",
+          "TEN_TAT": "HGI  | HGI-Hà Giang",
+          "DCHI": "Tầng 2 Tòa Nhà Viettel Hà Giang, số 218B, Đường Nguyễn Trãi, Phường Hà Giang 1, Tỉnh Tuyên Quang"
+        },
+        {
+          "MA": "HHO",
+          "XEP": "HHO                 ",
+          "TEN": "Tổng Công Ty Bảo Hiểm Petrolimex - Chi nhánh PJICO Hồng Hà",
+          "TEN_E": null,
+          "TEN_TAT": "HHO  | HHO-Hồng Hà",
+          "DCHI": "-"
+        },
+        {
+          "MA": "HNA",
+          "XEP": "--HNA               ",
+          "TEN": "Công ty bảo hiểm PJICO Hà Nam",
+          "TEN_E": "PJICO HA NAM INSURANCE COMPANY",
+          "TEN_TAT": "HNA  | HNA-Hà Nam",
+          "DCHI": "Số 30 đường Trần Hưng Đạo, Phường Phủ Lý, Tỉnh Ninh Bình"
+        },
+        {
+          "MA": "HNO",
+          "XEP": "--HNO               ",
+          "TEN": "Công ty bảo hiểm PJICO Hà Nội",
+          "TEN_E": "PJICO HA NOI INSURANCE COMPANY",
+          "TEN_TAT": "HNO  | HNO-Hà Nội",
+          "DCHI": "Tầng 2 và tầng 3, số 9 ngõ 84 phố Ngọc Khánh, Phường Giảng Võ, Thành phố Hà Nội, Việt Nam"
+        },
+        {
+          "MA": "HPH",
+          "XEP": "--HPH               ",
+          "TEN": "Công ty bảo hiểm PJICO Hải Phòng",
+          "TEN_E": "PJICO HAI PHONG INSURANCE COMPANY",
+          "TEN_TAT": "HPH  | HPH-Hải Phòng",
+          "DCHI": "Số 1 Đường Trần Hưng Đạo, Phường Hồng Bàng, Thành phố Hải Phòng"
+        },
+        {
+          "MA": "HTH",
+          "XEP": "--HTH               ",
+          "TEN": "Công ty bảo hiểm PJICO Hà Thành",
+          "TEN_E": "PJICO HA THANH INSURANCE COMPANY",
+          "TEN_TAT": "HTH  | HTH-Hà Thành",
+          "DCHI": "Tầng 3-5 Tòa nhà số 65 Đường Hoàng Cầu, Phường Đống Đa, Thành phố Hà Nội"
+        },
+        {
+          "MA": "HTI",
+          "XEP": "--HTI               ",
+          "TEN": "Công ty bảo hiểm PJICO Hà Tĩnh",
+          "TEN_E": "PJICO HA TINH INSURANCE COMPANY",
+          "TEN_TAT": "HTI  | HTI-Hà Tĩnh",
+          "DCHI": "Số 458 Hà Huy Tập, TP. Hà Tĩnh, Tỉnh Hà Tĩnh"
+        },
+        {
+          "MA": "HUE",
+          "XEP": "--HUE               ",
+          "TEN": "Công ty bảo hiểm PJICO Huế",
+          "TEN_E": "PJICO HUE INSURANCE COMPANY",
+          "TEN_TAT": "HUE  | HUE-Huế",
+          "DCHI": "76 Phạm Văn Đồng, P. Vỹ Dạ, TP Huế, Tỉnh Thừa Thiên Huế"
+        },
+        {
+          "MA": "HYE",
+          "XEP": "--HYE               ",
+          "TEN": "Công ty bảo hiểm PJICO Hưng Yên",
+          "TEN_E": "PJICO HUNG YEN INSURANCE COMPANY",
+          "TEN_TAT": "HYE  | HYE-Hưng Yên",
+          "DCHI": "Thửa đất số 86, tờ bản đồ số 10, phường Mỹ Hào, tỉnh Hưng Yên"
+        },
+        {
+          "MA": "KGI",
+          "XEP": "--KGI               ",
+          "TEN": "Công ty bảo hiểm PJICO Kiên Giang",
+          "TEN_E": "PJICO KIEN GIANG INSURANCE COMPANY",
+          "TEN_TAT": "KGI  | KGI-Kiên Giang",
+          "DCHI": "Số 615 Nguyễn Trung Trực, Phường Rạch Giá, Tỉnh An Giang"
+        },
+        {
+          "MA": "KHO",
+          "XEP": "--KHO               ",
+          "TEN": "Công ty bảo hiểm PJICO Khánh Hòa",
+          "TEN_E": "PJICO KHANH HOA INSURANCE COMPANY",
+          "TEN_TAT": "KHO  | KHO-Khánh Hòa",
+          "DCHI": "47 Lê Thành Phương, P. Phương Sài, Thành Phố Nha Trang, Tỉnh Khánh Hòa"
+        },
+        {
+          "MA": "LAN",
+          "XEP": "--LAN               ",
+          "TEN": "Công ty bảo hiểm PJICO Long An",
+          "TEN_E": "PJICO LONG AN INSURANCE COMPANY",
+          "TEN_TAT": "LAN  | LAN-Long An",
+          "DCHI": "Số 26 Đường số 2, KDC ĐTXD giai đoạn 1, KP. Bình Cư 3, Phường Long An, Tỉnh Tây Ninh"
+        },
+        {
+          "MA": "LCA",
+          "XEP": "--LCA               ",
+          "TEN": "Công ty bảo hiểm PJICO Lào Cai",
+          "TEN_E": "PJICO LAO CAI INSURANCE COMPANY",
+          "TEN_TAT": "LCA  | LCA-Lào Cai",
+          "DCHI": "Số 275 đường Lê Thanh, phường Cam Đường, tỉnh Lào Cai"
+        },
+        {
+          "MA": "LDO",
+          "XEP": "--LDO               ",
+          "TEN": "Công ty bảo hiểm PJICO Lâm Đồng",
+          "TEN_E": "PJICO LAM DONG INSURANCE COMPANY",
+          "TEN_TAT": "LDO  | LDO-Lâm Đồng",
+          "DCHI": "178 Nguyễn Văn Trỗi, Phường Xuân Hương - Đà Lạt, Tỉnh Lâm Đồng, Việt Nam"
+        },
+        {
+          "MA": "LSO",
+          "XEP": "--LSO               ",
+          "TEN": "Công ty bảo hiểm PJICO Lạng Sơn",
+          "TEN_E": "PJICO LANG SON INSURANCE COMPANY",
+          "TEN_TAT": "LSO  | LSO-Lạng Sơn",
+          "DCHI": "Số 129 Đường Bà Triệu, Phường Kỳ Lừa, Tỉnh Lạng Sơn."
+        },
+        {
+          "MA": "NAN",
+          "XEP": "--NAN               ",
+          "TEN": "Công ty bảo hiểm PJICO Nghệ An",
+          "TEN_E": "PJICO NGHE AN INSURANCE COMPANY",
+          "TEN_TAT": "NAN  | NAN-Nghệ An",
+          "DCHI": "Số 13, đường Nguyễn Sỹ Sách, Phường Vinh Phú, tỉnh Nghệ An"
+        },
+        {
+          "MA": "NDI",
+          "XEP": "--NDI               ",
+          "TEN": "Công ty bảo hiểm PJICO Nam Định",
+          "TEN_E": "PJICO NAM DINH INSURANCE COMPANY",
+          "TEN_TAT": "NDI  | NDI-Nam Định",
+          "DCHI": "193 Mạc Thị Bưởi, phường Nam Định, tỉnh Ninh Bình"
+        },
+        {
+          "MA": "PTH",
+          "XEP": "--PTH               ",
+          "TEN": "Công ty bảo hiểm PJICO Phú Thọ",
+          "TEN_E": "PJICO PHU THO INSURANCE COMPANY",
+          "TEN_TAT": "PTH  | PTH-Phú Thọ",
+          "DCHI": "Số 2094 Đường Hùng Vương, Phường Đông Trang, TP Việt Trì, Tỉnh Phú Thọ"
+        },
+        {
+          "MA": "PYE",
+          "XEP": "--PYE               ",
+          "TEN": "Công ty bảo hiểm PJICO Phú Yên",
+          "TEN_E": "PJICO PHU YEN INSURANCE COMPANY",
+          "TEN_TAT": "PYE  | PYE-Phú Yên",
+          "DCHI": "391 Nguyễn Huệ, Phường 7, Tp Tuy Hòa, Phú Yên"
+        },
+        {
+          "MA": "QBI",
+          "XEP": "--QBI               ",
+          "TEN": "Công ty bảo hiểm PJICO Quảng Bình",
+          "TEN_E": "PJICO QUANG BINH INSURANCE COMPANY",
+          "TEN_TAT": "QBI  | QBI-Quảng Bình",
+          "DCHI": "Số 3A, Đường Lê Quý Đôn, Phường Đồng Hới, Tỉnh Quảng Trị, Việt Nam"
+        },
+        {
+          "MA": "QNA",
+          "XEP": "--QNA               ",
+          "TEN": "Công ty bảo hiểm PJICO Quảng Nam",
+          "TEN_E": "PJICO QUANG NAM INSURANCE COMPANY",
+          "TEN_TAT": "QNA  | QNA-Quảng Nam",
+          "DCHI": "35-37 Hùng Vương, Phường Bàn Thạch, Thành phố Đà Nẵng"
+        },
+        {
+          "MA": "QNG",
+          "XEP": "--QNG               ",
+          "TEN": "Công ty bảo hiểm PJICO Quảng Ngãi",
+          "TEN_E": "PJICO QUANG NGAI INSURANCE COMPANY",
+          "TEN_TAT": "QNG  | QNG-Quảng Ngãi",
+          "DCHI": "168 Trương Định, Phường Trần Phú, Thành phố Quảng Ngãi, Tỉnh Quảng Ngãi, Việt Nam"
+        },
+        {
+          "MA": "QNI",
+          "XEP": "--QNI               ",
+          "TEN": "Công ty bảo hiểm PJICO Quảng Ninh",
+          "TEN_E": "PJICO QUANG NINH INSURANCE COMPANY",
+          "TEN_TAT": "QNI  | QNI-Quảng Ninh",
+          "DCHI": "Đường Trần Thái Tông, Tổ 6, Khu 6, Phường Hồng Gai, Tỉnh Quảng Ninh"
+        },
+        {
+          "MA": "QTR",
+          "XEP": "--QTR               ",
+          "TEN": "Công ty bảo hiểm PJICO Quảng Trị",
+          "TEN_E": "PJICO QUANG TRI INSURANCE COMPANY",
+          "TEN_TAT": "QTR  | QTR-Quảng Trị",
+          "DCHI": "Số 150 Lê Lợi, Khu phố 4, Phường Nam Đông Hà, Tỉnh Quảng Trị"
+        },
+        {
+          "MA": "SGO",
+          "XEP": "--SGO               ",
+          "TEN": "Công ty bảo hiểm PJICO Sài Gòn",
+          "TEN_E": "PJICO SAI GON INSURANCE COMPANY",
+          "TEN_TAT": "SGO  | SGO-Sài Gòn",
+          "DCHI": "186 Điện Biên Phủ, Phường Xuân Hòa, Thành Phố Hồ Chí Minh"
+        },
+        {
+          "MA": "SLA",
+          "XEP": "--SLA               ",
+          "TEN": "Công ty bảo hiểm PJICO Sơn La",
+          "TEN_E": "PJICO SON LA INSURANCE COMPANY",
+          "TEN_TAT": "SLA  | SLA-Sơn La",
+          "DCHI": "Số 196 đường Trường Chinh, tổ 1, phường Tô Hiệu, tỉnh Sơn La"
+        },
+        {
+          "MA": "STR",
+          "XEP": "--STR               ",
+          "TEN": "Công ty bảo hiểm PJICO Sóc Trăng",
+          "TEN_E": "PJICO SOC TRANG INSURANCE COMPANY",
+          "TEN_TAT": "STR  | STR-Sóc Trăng",
+          "DCHI": "737 Quốc lộ 1, Khóm 3, phường 2, TP. Sóc Trăng, Tỉnh Sóc Trăng"
+        },
+        {
+          "MA": "TBD",
+          "XEP": "--TBD               ",
+          "TEN": "Công ty bảo hiểm PJICO Tân Bình Dương",
+          "TEN_E": "PJICO TAN BINH DUONG INSURANCE COMPANY",
+          "TEN_TAT": "TBD  | TBD-Tân Bình Dương",
+          "DCHI": "Số 11A, Đường D4, Khu Đô Thị Thương Mại - Dịch Vụ The Seasons, Khu phố Đông Nhì, Phường Lái Thiêu, Thành Phố Hồ Chí Minh."
+        },
+        {
+          "MA": "TBI",
+          "XEP": "--TBI               ",
+          "TEN": "Công ty bảo hiểm PJICO Thái Bình",
+          "TEN_E": "PJICO THAI BINH INSURANCE COMPANY",
+          "TEN_TAT": "TBI  | TBI-Thái Bình",
+          "DCHI": "Số 10,Đường Trần Phú, Phường Trần Hưng Đạo, Tỉnh Hưng Yên"
+        },
+        {
+          "MA": "TDO",
+          "XEP": "--TDO               ",
+          "TEN": "Công ty bảo hiểm PJICO Thủ Đô",
+          "TEN_E": "PJICO THU DO  INSURANCE COMPANY",
+          "TEN_TAT": "TDO  | TDO-Thủ Đô",
+          "DCHI": "B-TT12-32A, Khu nhà ở Ngân Hà Vạn Phúc, Phường Hà Đông, Thành phố Hà Nội."
+        },
+        {
+          "MA": "TDU",
+          "XEP": "--TDU               ",
+          "TEN": "Công ty bảo hiểm PJICO Thủ Đức",
+          "TEN_E": "PJICO THU DUC  INSURANCE COMPANY",
+          "TEN_TAT": "TDU  | TDU-Thủ Đức",
+          "DCHI": "Lầu 6, Tòa nhà số 33A, đường Trần Não, Phường An Khánh, TP Hồ Chí Minh"
+        },
+        {
+          "MA": "TGI",
+          "XEP": "--TGI               ",
+          "TEN": "Công ty bảo hiểm PJICO Tiền Giang",
+          "TEN_E": "PJICO TIEN GIANG INSURANCE COMPANY",
+          "TEN_TAT": "TGI  | TGI-Tiền Giang",
+          "DCHI": "Số 169-171, đường Hùng Vương, phường Đạo Thạnh, tỉnh Đồng Tháp"
+        },
+        {
+          "MA": "THO",
+          "XEP": "--THO               ",
+          "TEN": "Công ty bảo hiểm PJICO Thanh Hóa",
+          "TEN_E": "PJICO THANH HOA INSURANCE COMPANY",
+          "TEN_TAT": "THO  | THO-Thanh Hóa",
+          "DCHI": "Số nhà 599 đường Nguyễn Chí Thanh, Phường Hàm Rồng, Tỉnh Thanh Hóa"
+        },
+        {
+          "MA": "TLO",
+          "XEP": "--TLO               ",
+          "TEN": "Công ty bảo hiểm PJICO Thăng Long",
+          "TEN_E": "PJICO THANG LONG INSURANCE COMPANY",
+          "TEN_TAT": "TLO  | TLO-Thăng Long",
+          "DCHI": "Số 211 Trung Kính. phường Yên Hòa, thành phố Hà Nội, Việt Nam"
+        },
+        {
+          "MA": "TNG",
+          "XEP": "--TNG               ",
+          "TEN": "Công ty bảo hiểm PJICO Thái Nguyên",
+          "TEN_E": "PJICO THAI NGUYEN INSURANCE COMPANY",
+          "TEN_TAT": "TNG  | TNG-Thái Nguyên",
+          "DCHI": "Số 289 Đường CMT8 - Tổ 1, Phường Gia Sàng, TP Thái Nguyên, tỉnh Thái Nguyên"
+        },
+        {
+          "MA": "TNI",
+          "XEP": "--TNI               ",
+          "TEN": "Công ty bảo hiểm PJICO Tây Ninh",
+          "TEN_E": "PJICO TAY NINH INSURANCE COMPANY",
+          "TEN_TAT": "TNI  | TNI-Tây Ninh",
+          "DCHI": "133, đường 30/4, Khu phố 4, Phường Tân Ninh, Tỉnh Tây Ninh"
+        },
+        {
+          "MA": "TQU",
+          "XEP": "--TQU               ",
+          "TEN": "Công ty bảo hiểm PJICO Tuyên Quang",
+          "TEN_E": "PJICO TUYEN QUANG INSURANCE COMPANY",
+          "TEN_TAT": "TQU  | TQU-Tuyên Quang",
+          "DCHI": "Số 2 đường Phan Thiết, Phường Phan Thiết, Thị Xã Tuyên Quang, Tỉnh Tuyên Quang"
+        },
+        {
+          "MA": "TRA",
+          "XEP": "--TRA               ",
+          "TEN": "Công ty bảo hiểm PJICO Tràng An",
+          "TEN_E": "PJICO TRANG AN INSURANCE COMPANY",
+          "TEN_TAT": "TRA  | TRA-Tràng An",
+          "DCHI": "số 308 đường Trần Khát Chân, tổ 4, Phường Hai Bà Trưng, TP. Hà Nội"
+        },
+        {
+          "MA": "TVI",
+          "XEP": "--TVI               ",
+          "TEN": "Công ty bảo hiểm PJICO Trà Vinh",
+          "TEN_E": "PJICO TRA VINH INSURANCE COMPANY",
+          "TEN_TAT": "TVI  | TVI-Trà Vinh",
+          "DCHI": "Số 335 Phan Đình Phùng, Phường Trà Vinh, Tỉnh Vĩnh Long"
+        },
+        {
+          "MA": "VPH",
+          "XEP": "--VPH               ",
+          "TEN": "Công ty bảo hiểm PJICO Vĩnh Phúc",
+          "TEN_E": "PJICO VINH PHUC INSURANCE COMPANY",
+          "TEN_TAT": "VPH  | VPH-Vĩnh Phúc",
+          "DCHI": "Số 27 đường Ngô Gia Tự, phường Vĩnh Phúc, tỉnh Phú Thọ"
+        },
+        {
+          "MA": "VTA",
+          "XEP": "--VTA               ",
+          "TEN": "Công ty bảo hiểm PJICO Vũng Tàu",
+          "TEN_E": "PJICO VUNG TAU INSURANCE COMPANY",
+          "TEN_TAT": "VTA  | VTA-Vũng Tàu",
+          "DCHI": "Số 70 Cô Giang, Phường Vũng Tàu, Thành Phố Hồ Chí Minh"
+        },
+        {
+          "MA": "YBA",
+          "XEP": "--YBA               ",
+          "TEN": "Công ty bảo hiểm PJICO Yên Bái",
+          "TEN_E": "PJICO YEN BAI INSURANCE COMPANY",
+          "TEN_TAT": "YBA  | YBA-Yên Bái",
+          "DCHI": "Số 1082 đường Điện Biên, Phường Yên Bái, Tỉnh Lào Cai, Việt Nam"
+        }
+      ]
+    }
+  ],
+  "branchUnit": [
+    {
+      "status": 200,
+      "ct": "text/html; charset=utf-8",
+      "code": "000",
+      "total": 0
+    }
+  ],
+  "qrcode": {
+    "captured": [
+      {
+        "url": "https://uat-capdon.pjico.com.vn/InsuranceFee/qrcode",
+        "status": 302,
+        "ct": "text/html; charset=utf-8",
+        "location": "/ErrorHandler/Index",
+        "isImg": true
+      }
+    ],
+    "directStatus": 302,
+    "directCT": "text/html; charset=utf-8",
+    "followStatus": 200,
+    "followCT": "text/html; charset=utf-8"
+  }
+}

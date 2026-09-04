@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Claude Chatbox (Local · Ollama)</title>
+<style>
+  :root {
+    --bg: #1e1e2e;
+    --panel: #181825;
+    --accent: #cba6f7;
+    --accent-2: #89b4fa;
+    --text: #cdd6f4;
+    --muted: #a6adc8;
+    --user: #313244;
+    --bot: #45475a;
+    --ok: #a6e3a1;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: ui-sans-serif, system-ui, "Segoe UI", Roboto, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  header {
+    padding: 14px 18px;
+    background: var(--panel);
+    border-bottom: 1px solid #313244;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  header .dot {
+    width: 10px; height: 10px; border-radius: 50%;
+    background: var(--ok); box-shadow: 0 0 8px var(--ok);
+  }
+  header h1 { font-size: 15px; margin: 0; font-weight: 600; }
+  header .sub { font-size: 12px; color: var(--muted); }
+  #bar { flex: 1; }
+  select, button {
+    background: #313244; color: var(--text); border: 1px solid #45475a;
+    border-radius: 8px; padding: 6px 10px; font-size: 13px;
+  }
+  button { cursor: pointer; }
+  button:hover { background: #45475a; }
+  #chat {
+    flex: 1; overflow-y: auto; padding: 18px; display: flex;
+    flex-direction: column; gap: 12px;
+  }
+  .msg { max-width: 80%; padding: 10px 14px; border-radius: 14px; line-height: 1.5; white-space: pre-wrap; word-break: break-word; }
+  .user { align-self: flex-end; background: var(--user); border-bottom-right-radius: 4px; }
+  .bot  { align-self: flex-start; background: var(--bot);  border-bottom-left-radius: 4px; }
+  .bot .role { font-size: 11px; color: var(--accent); margin-bottom: 4px; font-weight: 600; }
+  .sys { align-self: center; color: var(--muted); font-size: 12px; }
+  #inputbar {
+    padding: 12px 18px; background: var(--panel); border-top: 1px solid #313244;
+    display: flex; gap: 10px; align-items: flex-end;
+  }
+  textarea {
+    flex: 1; resize: none; background: #313244; color: var(--text);
+    border: 1px solid #45475a; border-radius: 10px; padding: 10px 12px;
+    font-size: 14px; font-family: inherit; max-height: 140px; min-height: 44px;
+  }
+  textarea:focus { outline: none; border-color: var(--accent); }
+  #send { background: var(--accent); color: #1e1e2e; border: none; font-weight: 600; padding: 10px 18px; }
+  #send:disabled { opacity: .5; cursor: not-allowed; }
+  .typing { color: var(--muted); font-style: italic; }
+  code { background:#11111b; padding:1px 5px; border-radius:4px; font-size:.9em; }
+</style>
+</head>
+<body>
+  <header>
+    <span class="dot" id="status-dot"></span>
+    <div>
+      <h1>Claude Chatbox</h1>
+      <div class="sub" id="status-text">đang kiểm tra…</div>
+    </div>
+    <div id="bar"></div>
+    <select id="model" title="Chọn model"></select>
+    <button id="clear" title="Xóa hội thoại">🧹</button>
+  </header>
+
+  <div id="chat"></div>
+
+  <div id="inputbar">
+    <textarea id="prompt" rows="1" placeholder="Nhập tin nhắn… (Enter để gửi, Shift+Enter = xuống dòng)"></textarea>
+    <button id="send">Gửi</button>
+  </div>
+
+<script>
+const API = "http://127.0.0.1:11434";
+const chatEl  = document.getElementById("chat");
+const promptEl = document.getElementById("prompt");
+const sendBtn = document.getElementById("send");
+const modelSel = document.getElementById("model");
+const statusDot = document.getElementById("status-dot");
+const statusText = document.getElementById("status-text");
+let messages = [];
+let busy = false;
+
+function add(role, text) {
+  const d = document.createElement("div");
+  d.className = role;
+  if (role === "bot") {
+    const r = document.createElement("div"); r.className = "role"; r.textContent = modelSel.value || "assistant";
+    d.appendChild(r);
+    const t = document.createElement("div"); t.textContent = text; d.appendChild(t);
+  } else {
+    d.textContent = text;
+  }
+  chatEl.appendChild(d);
+  chatEl.scrollTop = chatEl.scrollHeight;
+  return d;
+}
+
+async function checkHealth() {
+  try {
+    const r = await fetch(API + "/api/tags");
+    const j = await r.json();
+    modelSel.innerHTML = "";
+    j.models.forEach(m => {
+      const o = document.createElement("option"); o.value = m.name; o.textContent = m.name;
+      modelSel.appendChild(o);
+    });
+    if (!j.models.length) { statusText.textContent = "không có model nào"; return false; }
+    if (!modelSel.value) modelSel.value = j.models[0].name;
+    statusDot.style.background = "var(--ok)"; statusDot.style.boxShadow = "0 0 8px var(--ok)";
+    statusText.textContent = "kết nối · " + j.models.length + " model";
+    return true;
+  } catch (e) {
+    statusDot.style.background = "#f38ba8"; statusDot.style.boxShadow = "0 0 8px #f38ba8";
+    statusText.textContent = "không kết nối được Ollama (127.0.0.1:11434)";
+    return false;
+  }
+}
+
+async function send() {
+  if (busy) return;
+  const text = promptEl.value.trim();
+  if (!text) return;
+  if (!(await checkHealth())) { add("sys", "⚠ Ollama không chạy. Bật Ollama rồi thử lại."); return; }
+  add("user", text);
+  messages.push({ role: "user", content: text });
+  promptEl.value = ""; promptEl.style.height = "auto";
+  busy = true; sendBtn.disabled = true;
+
+  const botEl = add("bot", "");
+  const tEl = botEl.querySelector("div:last-child");
+  let full = "";
+  try {
+    const res = await fetch(API + "/api/chat", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ model: modelSel.value, messages, stream: true })
+    });
+    const reader = res.body.getReader();
+    const dec = new TextDecoder();
+    let buf = "";
+    while (true) {
+      const { value, done } = await reader.read();
+      if (done) break;
+      buf += dec.decode(value, { stream: true });
+      const lines = buf.split("\n");
+      buf = lines.pop();
+      for (const line of lines) {
+        if (!line.trim()) continue;
+        const obj = JSON.parse(line);
+        if (obj.message?.content) { full += obj.message.content; tEl.textContent = full; chatEl.scrollTop = chatEl.scrollHeight; }
+        if (obj.error) throw new Error(obj.error);
+      }
+    }
+    messages.push({ role: "assistant", content: full });
+  } catch (e) {
+    tEl.textContent = "⚠ " + e.message;
+  } finally {
+    busy = false; sendBtn.disabled = false; promptEl.focus();
+  }
+}
+
+sendBtn.onclick = send;
+document.getElementById("clear").onclick = () => { messages = []; chatEl.innerHTML = ""; };
+promptEl.addEventListener("keydown", e => {
+  if (e.key === "Enter" && !e.shiftKey) { e.preventDefault(); send(); }
+});
+promptEl.addEventListener("input", () => {
+  promptEl.style.height = "auto";
+  promptEl.style.height = Math.min(promptEl.scrollHeight, 140) + "px";
+});
+
+checkHealth();
+setInterval(checkHealth, 15000);
+</script>
+</body>
+</html>

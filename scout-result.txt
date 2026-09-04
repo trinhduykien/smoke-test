@@ -1,0 +1,170 @@
+=== URL SAU ĐĂNG NHẬP: https://uat-capdon.pjico.com.vn/Home/Index
+=== TITLE: Dashboard - PJICO: Nền tảng cấp đơn bảo hiểm
+
+=== TẤT CẢ LINK (href | text | id | class) ===
+[x] {"href":"/Home/Index","text":"","id":"logoKenh","cls":"","visible":true}
+[x] {"href":"#","text":"CẤP ĐƠN","id":"","cls":"dropdown-toggle name-menu--item","visible":true}
+[x] {"href":"/ContractCar/Search","text":"Cấp đơn xe ô tô","id":"","cls":"item-content--decs pj-has-product-icon pj-mega-leaf-ready","visible":true}
+[x] {"href":"/tim-kiem-xe-may","text":"Cấp đơn xe máy","id":"","cls":"item-content--decs pj-has-product-icon pj-mega-leaf-ready","visible":true}
+[x] {"href":"/ContractCar/SearchFeeApprove","text":"Trình - duyêt phí / phân cấp","id":"","cls":"item-content--decs pj-mega-leaf-ready","visible":true}
+[x] {"href":"/PropertyFireInsurance/Search","text":"Cấp đơn Bảo hiểm nhà ở","id":"","cls":"item-content--decs pj-has-product-icon pj-mega-leaf-ready","visible":true}
+[x] {"href":"/ContractAssetsMixed/Search","text":"Cấp đơn Bảo hiểm Tài sản","id":"","cls":"item-content--decs pj-mega-leaf-ready","visible":true}
+[x] {"href":"/ContractProperty/Search?nv=31","text":"In Premia tài Sản","id":"","cls":"item-content--decs pj-mega-leaf-ready","visible":true}
+[x] {"href":"/ContractProperty/Search?nv=33","text":"In Premia trách nhiệm","id":"","cls":"item-content--decs pj-mega-leaf-ready","visible":true}
+[x] {"href":"/ContractProperty/Search?nv=34","text":"In Premia hỗn hợp","id":"","cls":"item-content--decs pj-mega-leaf-ready","visible":true}
+[x] {"href":"/ContractProperty/Search_fee","text":"Đăng ký chào phí NV Tài sản-Kỹ thuật","id":"","cls":"item-content--decs pj-mega-leaf-ready","visible":true}
+[x] {"href":"/ContractProperty/Search_PropertyFee","text":"Chào phí","id":"","cls":"item-content--decs pj-mega-leaf-ready","visible":true}
+[x] {"href":"/ContractPerson/Import_sk_sddien","text":"Import BH tai nạn sử dụng điện","id":"","cls":"item-content--decs pj-has-product-icon pj-mega-leaf-ready","visible":true}
+[x] {"href":"/ContractPerson/SearchCombo?loaibh=6901","text":"Chăm sóc sức khỏe sản phẩm COMBO","id":"","cls":"item-content--decs pj-has-product-icon pj-mega-leaf-ready","visible":true}
+[x] {"href":"/ContractPerson/Search?loaibh=69","text":"Chăm sóc sức khỏe","id":"","cls":"item-content--decs pj-has-product-icon pj-mega-leaf-ready","visible":true}
+[x] {"href":"/ContractPerson/Search?loaibh=NG","text":"Con người truyền thống","id":"","cls":"item-content--decs pj-has-product-icon pj-mega-leaf-ready","visible":true}
+[x] {"href":"/ContractPerson/Search?loaibh=62","text":"Bảo hiểm tai nạn","id":"","cls":"item-content--decs pj-has-product-icon pj-mega-leaf-ready","visible":true}
+[x] {"href":"/ContractPerson/Search?loaibh=6101","text":"Bảo hiểm An tâm Viện Phí","id":"","cls":"item-content--decs pj-mega-leaf-ready","visible":true}
+[x] {"href":"/ContractCargo/SearchTLO","text":"Cấp đơn hàng hóa TLO","id":"","cls":"item-content--decs pj-mega-leaf-ready","visible":true}
+[x] {"href":"/ContractCargo/Search","text":"Hàng hóa","id":"","cls":"item-content--decs pj-mega-leaf-ready","visible":true}
+[x] {"href":"/ContractShip/Search","text":"Tàu thuyền","id":"","cls":"item-content--decs pj-mega-leaf-ready","visible":true}
+[x] {"href":"#","text":"THANH TOÁN","id":"","cls":"dropdown-toggle name-menu--item","visible":true}
+[x] {"href":"/InsuranceFee/SearchPaymentFts","text":"Thanh toán phí","id":"","cls":"item-content--decs pj-leaf-terminal pj-leaf-card pj-leaf-rea","visible":true}
+[x] {"href":"/InsuranceFee/SearchInvoiceFTS","text":"Phát hành hóa đơn VAT","id":"","cls":"item-content--decs pj-leaf-terminal pj-leaf-card pj-leaf-rea","visible":true}
+[ ] {"href":"/InsuranceFee/Debts","text":"Công nợ khách hàng","id":"","cls":"item-content--decs pj-leaf-terminal pj-leaf-card pj-leaf-rea","visible":false}
+[ ] {"href":"/CoInsurance/Debts","text":"Công nợ đồng","id":"","cls":"item-content--decs pj-leaf-terminal pj-leaf-card pj-leaf-rea","visible":false}
+[ ] {"href":"/InsuranceCommission/DebtsAgen","text":"Công nợ đại lý","id":"","cls":"item-content--decs pj-leaf-terminal pj-leaf-card pj-leaf-rea","visible":false}
+[x] {"href":"#","text":"BỒI THƯỜNG","id":"","cls":"dropdown-toggle name-menu--item","visible":true}
+[x] {"href":"/ClaimGeneral/ObjectSearch","text":"Tim doi tuong","id":"","cls":"item-content--decs pj-mega-leaf-ready","visible":true}
+[x] {"href":"/ClaimGeneral/Search","text":"Tim ho so","id":"","cls":"item-content--decs pj-mega-leaf-ready","visible":true}
+[x] {"href":"/ClaimCargo/SearchFTS","text":"Tim ho so FTS","id":"","cls":"item-content--decs pj-mega-leaf-ready","visible":true}
+[x] {"href":"/ClaimCargo/ObjectSearch","text":"Tim doi tuong Hang hoa","id":"","cls":"item-content--decs pj-mega-leaf-ready","visible":true}
+[x] {"href":"/ClaimCargo/Search","text":"Tim ho so Hang hoa","id":"","cls":"item-content--decs pj-mega-leaf-ready","visible":true}
+[x] {"href":"#","text":"TÁI BẢO HIỂM","id":"","cls":"dropdown-toggle name-menu--item","visible":true}
+[x] {"href":"/ReInsurance/InwardTreatyReinsurance","text":"Hợp đồng nhận tái cố định","id":"","cls":"item-content--decs pj-leaf-terminal pj-leaf-card pj-leaf-rea","visible":true}
+[x] {"href":"/ReInsurance/OutwardTreatyReinsurance","text":"Hợp đồng nhượng tái cố định","id":"","cls":"item-content--decs pj-leaf-terminal pj-leaf-card pj-leaf-rea","visible":true}
+[x] {"href":"/CategoryReInsurance/RetentionByMajor","text":"Mức giữ lại theo nghiệp vụ","id":"","cls":"item-content--decs pj-leaf-terminal pj-leaf-card pj-leaf-rea","visible":true}
+[x] {"href":"/CategoryReInsurance/RetentionByObject","text":"Mức giữ lại theo đối tượng","id":"","cls":"item-content--decs pj-leaf-terminal pj-leaf-card pj-leaf-rea","visible":true}
+[x] {"href":"/CategoryReInsurance/RetentionByObjectCar","text":"Mức giữ lại theo đối tượng - Xe cơ giới","id":"","cls":"item-content--decs pj-leaf-terminal pj-leaf-card pj-leaf-rea","visible":true}
+[ ] {"href":"/ReInsurance/AllocationSearch","text":"Phân bổ tỷ lệ tái","id":"","cls":"item-content--decs pj-leaf-terminal pj-leaf-card pj-leaf-rea","visible":false}
+[x] {"href":"/ReInsurance/ProcessingSearch","text":"Xử lý tái","id":"","cls":"menu-item--title color--motor","visible":true}
+[ ] {"href":"/ReInsurance/TreatyOutwardSearch","text":"Bảng kê đối chiếu","id":"","cls":"item-content--decs pj-leaf-terminal pj-leaf-card pj-leaf-rea","visible":false}
+[ ] {"href":"/ReInsurance/TreatyInward","text":"Bảng kê nhận tái cố định","id":"","cls":"item-content--decs pj-leaf-terminal pj-leaf-card pj-leaf-rea","visible":false}
+[ ] {"href":"/ReInsurance/Debt","text":"Công nợ nhà tái","id":"","cls":"item-content--decs pj-leaf-terminal pj-leaf-card pj-leaf-rea","visible":false}
+[x] {"href":"#","text":"TIỆN ÍCH","id":"","cls":"dropdown-toggle name-menu--item","visible":true}
+[x] {"href":"/ContractPublic/BrowerEnd","text":"Chấm dứt hợp đồng","id":"","cls":"menu-item--title color--motor","visible":true}
+[x] {"href":"/ContractPublic/BrowserSearch","text":"Duyệt hợp đồng","id":"","cls":"item-content--decs pj-leaf-terminal pj-leaf-card pj-leaf-rea","visible":true}
+[x] {"href":"/Profit/CASearchObjects","text":"Tra cứu HĐ bảo hiểm","id":"","cls":"item-content--decs pj-leaf-terminal pj-leaf-card pj-leaf-rea","visible":true}
+[ ] {"href":"/ContractRecive/Search","text":"Nhận số liệu về Core","id":"","cls":"item-content--decs pj-leaf-terminal pj-leaf-card pj-leaf-rea","visible":false}
+[x] {"href":"/ContractRecive/SearchContractPremia","text":"Nhận về từ Premia","id":"","cls":"menu-item--title color--motor","visible":true}
+[x] {"href":"/CoInsurance/CoInsuranceReconciliation","text":"Đối soát đồng bảo hiểm_ESCS","id":"","cls":"menu-item--title color--motor","visible":true}
+[ ] {"href":"#","text":"Hệ thống mã","id":"","cls":"dropdown-toggle name-menu--item","visible":false}
+[x] {"href":"/CategorySystem/Unit","text":"Mã đơn vị","id":"","cls":"item-content--decs pj-leaf-terminal pj-leaf-card pj-leaf-rea","visible":true}
+[x] {"href":"/CategorySystem/Department","text":"Mã phòng ban/bộ phận","id":"","cls":"item-content--decs pj-leaf-terminal pj-leaf-card pj-leaf-rea","visible":true}
+[x] {"href":"/CategorySystem/UserAccount","text":"Mã người sử dụng","id":"","cls":"item-content--decs pj-leaf-terminal pj-leaf-card pj-leaf-rea","visible":true}
+[x] {"href":"/CategorySystem/Staff","text":"Mã cán bộ","id":"","cls":"item-content--decs pj-leaf-terminal pj-leaf-card pj-leaf-rea","visible":true}
+[x] {"href":"/CategoryOther/MenuIcon","text":"Quản lý icon menu","id":"","cls":"item-content--decs pj-leaf-terminal pj-leaf-card pj-leaf-rea","visible":true}
+[ ] {"href":"/CategoryInsurance/Customer","text":"Mã khách hàng","id":"","cls":"item-content--decs pj-leaf-terminal pj-leaf-card pj-leaf-rea","visible":false}
+[ ] {"href":"/CategoryInsurance/Agency","text":"Mã đại lý","id":"","cls":"item-content--decs pj-leaf-terminal pj-leaf-card pj-leaf-rea","visible":false}
+[ ] {"href":"/CategoryPushNotify/PushNotify","text":"Khai báo nội dung Push Notify","id":"","cls":"item-content--decs pj-leaf-terminal pj-leaf-card pj-leaf-rea","visible":false}
+[ ] {"href":"/CategoryPerson/Benefit","text":"Mã quyền lợi","id":"","cls":"item-content--decs pj-leaf-terminal pj-leaf-card pj-leaf-rea","visible":false}
+[ ] {"href":"/ContractPerson/ProductPackages","text":"Hệ thống gói sản phẩm","id":"","cls":"item-content--decs pj-leaf-terminal pj-leaf-card pj-leaf-rea","visible":false}
+[ ] {"href":"/FeeSchedule/FeeSchedule","text":"Quản lý biểu phí xe cơ giới","id":"","cls":"item-content--decs pj-leaf-terminal pj-leaf-card pj-leaf-rea","visible":false}
+[ ] {"href":"/CategoryCar/Manufacturer","text":"Hãng xe","id":"","cls":"item-content--decs pj-leaf-terminal pj-leaf-card pj-leaf-rea","visible":false}
+[ ] {"href":"/CategoryCar/Brand","text":"Hiệu xe","id":"","cls":"item-content--decs pj-leaf-terminal pj-leaf-card pj-leaf-rea","visible":false}
+[ ] {"href":"/CategoryCar/CarType","text":"Loại xe","id":"","cls":"item-content--decs pj-leaf-terminal pj-leaf-card pj-leaf-rea","visible":false}
+[ ] {"href":"/CategoryCar/CarGroup","text":"Nhóm xe","id":"","cls":"item-content--decs pj-leaf-terminal pj-leaf-card pj-leaf-rea","visible":false}
+[ ] {"href":"/CategoryProperty/PropertyGroup","text":"Mã nhóm TSKT","id":"","cls":"item-content--decs pj-leaf-terminal pj-leaf-card pj-leaf-rea","visible":false}
+[ ] {"href":"/CategoryProperty/PropertyGroupObject","text":"Mã nhóm đối tượng","id":"","cls":"item-content--decs pj-leaf-terminal pj-leaf-card pj-leaf-rea","visible":false}
+[ ] {"href":"/CategoryProperty/PropertyPremiumRateTables","text":"Biểu phí tài sản, kỹ thuật","id":"","cls":"item-content--decs pj-leaf-terminal pj-leaf-card pj-leaf-rea","visible":false}
+[ ] {"href":"/ReInsurance/location","text":"Mã địa điểm","id":"","cls":"item-content--decs pj-leaf-terminal pj-leaf-card pj-leaf-rea","visible":false}
+[ ] {"href":"#","text":"Báo cáo","id":"","cls":"dropdown-toggle name-menu--item","visible":false}
+[x] {"href":"/Report/HealthReport","text":"Báo cáo doanh thu bảo hiểm CSSK (6901/6903)","id":"","cls":"item-content--decs pj-leaf-terminal pj-leaf-card pj-leaf-rea","visible":true}
+[ ] {"href":"/Report/DetailedRevenueReport?bc=dtct","text":"DT theo đối tượng quản lý","id":"","cls":"item-content--decs pj-leaf-terminal pj-leaf-card pj-leaf-rea","visible":false}
+[ ] {"href":"/Report/RenewalReport?bc=cantt","text":"Báo cáo chi tiết tái tục","id":"","cls":"item-content--decs pj-leaf-terminal pj-leaf-card pj-leaf-rea","visible":false}
+[ ] {"href":"/Report/RenewalReport?bc=datt","text":"Báo cáo tỷ lệ tái tục","id":"","cls":"item-content--decs pj-leaf-terminal pj-leaf-card pj-leaf-rea","visible":false}
+[ ] {"href":"/Report/BancasReport?bc=1","text":"Doanh thu theo chương trình","id":"","cls":"item-content--decs pj-leaf-terminal pj-leaf-card pj-leaf-rea","visible":false}
+[ ] {"href":"/Report/BancasReport?bc=2","text":"VTVcab_01 - Đối soát Hoa hồng, HT đại lý","id":"","cls":"item-content--decs pj-leaf-terminal pj-leaf-card pj-leaf-rea","visible":false}
+[ ] {"href":"/Report/BancasReport?bc=3","text":"VTVcab_02 - Đề nghị thanh toán HH, HT đại lý","id":"","cls":"item-content--decs pj-leaf-terminal pj-leaf-card pj-leaf-rea","visible":false}
+[ ] {"href":"/Report/BancasReport?bc=4","text":"VTVcab_03 - Nghiệm thu CV PTTH","id":"","cls":"item-content--decs pj-leaf-terminal pj-leaf-card pj-leaf-rea","visible":false}
+[ ] {"href":"/Report/BancasReport?bc=5","text":"VTVcab_04 - Đề nghị thanh toán CP PTTH","id":"","cls":"item-content--decs pj-leaf-terminal pj-leaf-card pj-leaf-rea","visible":false}
+[ ] {"href":"/Report/SynthesisCertificateReport_receive","text":"Chi tiết HĐ đã nhận về","id":"","cls":"item-content--decs pj-leaf-terminal pj-leaf-card pj-leaf-rea","visible":false}
+[ ] {"href":"/Report/SynthesisCertificateReport","text":"Chi tiết HĐ chưa nhận về","id":"","cls":"item-content--decs pj-leaf-terminal pj-leaf-card pj-leaf-rea","visible":false}
+[ ] {"href":"/Report/StaffReport?bc=tshh","text":"Báo cáo tái tục theo tỷ lệ","id":"","cls":"item-content--decs pj-leaf-terminal pj-leaf-card pj-leaf-rea","visible":false}
+[ ] {"href":"/Report/StaffReport?bc=tshhct","text":"Báo cáo chi tiết tái tục","id":"","cls":"item-content--decs pj-leaf-terminal pj-leaf-card pj-leaf-rea","visible":false}
+[x] {"href":"/ContractCargo/SearchBCTLO","text":"Báo cáo tổng hợp khai thác TLO","id":"","cls":"menu-item--title color--motor","visible":true}
+[x] {"href":"/AppDashboard/DashBoard","text":"APP - Dashboard tổng hợp","id":"","cls":"menu-item--title color--motor","visible":true}
+[ ] {"href":"/Report/PointReport?bc=ct","text":"Báo cáo chi tiết tích điểm","id":"","cls":"item-content--decs pj-leaf-terminal pj-leaf-card pj-leaf-rea","visible":false}
+[ ] {"href":"/Report/PointReport?bc=thdv","text":"Báo cáo tổng hợp điểm đã cấp","id":"","cls":"item-content--decs pj-leaf-terminal pj-leaf-card pj-leaf-rea","visible":false}
+[x] {"href":"#","text":"THÊM","id":"","cls":"name-menu--item pj-more-toggle","visible":true}
+[x] {"href":"#","text":"TRINH DUY KIEN (TCT)","id":"pjUserMenuToggle","cls":"dropdown-toggle","visible":true}
+[x] {"href":"/Qrcode/SearchQrcode","text":"Tạo QR cấp đơn","id":"","cls":"","visible":true}
+[x] {"href":"/Tienich/ChangePassword","text":"Đổi mật khẩu","id":"","cls":"","visible":true}
+[x] {"href":"/Home/LogOut","text":"Đăng xuất","id":"","cls":"","visible":true}
+[x] {"href":"mailto:customercare.ipjico@petrolimex.com.vn","text":"customercare.ipjico@petrolimex.com.vn","id":"","cls":"","visible":true}
+[x] {"href":"https://baohiem.pjico.com.vn/Chinh-sach-bao-mat-thong-tin-ca-nhan","text":"Chính sách bảo mật","id":"","cls":"","visible":true}
+
+=== BUTTONS ===
+{"text":"","id":"pjMobileMenuToggle","cls":"pj-mobile-menu-toggle"}
+{"text":"Tìm nhanh chức năng","id":"pjMenuSearchToggle","cls":"pj-menu-search-button"}
+{"text":"Theo điều kiện chọn","id":"","cls":"btn-square btn-back btn-p-input"}
+{"text":"Xem chi tiết các tháng","id":"button","cls":"btn btn-filter-update"}
+{"text":"×","id":"","cls":"close"}
+{"text":"×","id":"","cls":"close"}
+{"text":"Hủy","id":"","cls":"btn btn-secondary"}
+{"text":"Chấp nhận","id":"","cls":"btn btn-danger"}
+
+=== HEADINGS ===
+H4: Chi tiết doanh thu theo từng tháng
+H4: Tổng Công Ty Cổ Phần Bảo Hiểm Petrolimex - PJICO
+H4: Thông báo
+H4: 
+
+=== FORMS & INPUTS ===
+
+=== MENU TEXT (nav, sidebar, menu) ===
+nav :: CẤP ĐƠN | THANH TOÁN | BỒI THƯỜNG | TÁI BẢO HIỂM | TIỆN ÍCH | THÊM | TRINH DUY KIEN (TCT)
+.menu :: CẤP ĐƠN | THANH TOÁN | BỒI THƯỜNG | TÁI BẢO HIỂM | TIỆN ÍCH | THÊM
+.menu :: TRINH DUY KIEN (TCT)
+[class*=menu] :: CẤP ĐƠN | THANH TOÁN | BỒI THƯỜNG | TÁI BẢO HIỂM | TIỆN ÍCH | THÊM | TRINH DUY KIEN (TCT) | Kiểu số liệu | Doanh thu theo tháng | Doanh thu theo năm | Đến ngày | Đơn vị quản lý | Tất cả | Văn phòng Tổng Công ty (TCT) | PJICO An Giang (AGI) | PJICO Bắc Giang (BGI) | PJICO Bạc Liêu (BLI) | PJICO Bắc N
+[class*=menu] :: CẤP ĐƠN | THANH TOÁN | BỒI THƯỜNG | TÁI BẢO HIỂM | TIỆN ÍCH | THÊM | TRINH DUY KIEN (TCT)
+[class*=menu] :: CẤP ĐƠN | THANH TOÁN | BỒI THƯỜNG | TÁI BẢO HIỂM | TIỆN ÍCH | THÊM | TRINH DUY KIEN (TCT)
+[class*=menu] :: CẤP ĐƠN | THANH TOÁN | BỒI THƯỜNG | TÁI BẢO HIỂM | TIỆN ÍCH | THÊM | TRINH DUY KIEN (TCT)
+[class*=menu] :: CẤP ĐƠN
+[class*=menu] :: THANH TOÁN
+[class*=menu] :: Công nợ khách hàngCông nợ đồngCông nợ đại lý
+[class*=menu] :: Công nợ khách hàngCông nợ đồngCông nợ đại lý
+[class*=menu] :: BỒI THƯỜNG
+[class*=menu] :: TÁI BẢO HIỂM
+[class*=menu] :: Phân bổ tỷ lệ tái
+[class*=menu] :: Phân bổ tỷ lệ tái
+[class*=menu] :: Bảng kê đối chiếuBảng kê nhận tái cố định
+[class*=menu] :: Bảng kê đối chiếuBảng kê nhận tái cố định
+[class*=menu] :: Công nợ nhà tái
+[class*=menu] :: Công nợ nhà tái
+[class*=menu] :: TIỆN ÍCH
+[class*=menu] :: Nhận số liệu về Core
+[class*=menu] :: Nhận số liệu về Core
+[class*=menu] :: Hệ thống mã
+[class*=menu] :: Mã khách hàngMã đại lýKhai báo nội dung Push Notify
+[class*=menu] :: Mã khách hàngMã đại lýKhai báo nội dung Push Notify
+[class*=menu] :: Mã quyền lợiHệ thống gói sản phẩm
+[class*=menu] :: Mã quyền lợiHệ thống gói sản phẩm
+[class*=menu] :: Quản lý biểu phí xe cơ giớiHãng xeHiệu xeLoại xeNhóm xe
+[class*=menu] :: Quản lý biểu phí xe cơ giớiHãng xeHiệu xeLoại xeNhóm xe
+[class*=menu] :: Mã nhóm TSKTMã nhóm đối tượngBiểu phí tài sản, kỹ thuậtMã địa điểm
+[class*=menu] :: Mã nhóm TSKTMã nhóm đối tượngBiểu phí tài sản, kỹ thuậtMã địa điểm
+[class*=menu] :: Báo cáo
+[class*=menu] :: DT theo đối tượng quản lýBáo cáo chi tiết tái tụcBáo cáo tỷ lệ tái tục
+[class*=menu] :: DT theo đối tượng quản lýBáo cáo chi tiết tái tụcBáo cáo tỷ lệ tái tục
+[class*=menu] :: Doanh thu theo chương trìnhVTVcab_01 -  Đối soát Hoa hồng, HT đại lýVTVcab_02 - Đề nghị thanh toán HH, HT đại lýVTVcab_03 - Nghiệm thu CV PTTHVTVcab_04 - Đề nghị thanh toán CP PTTH
+[class*=menu] :: Doanh thu theo chương trìnhVTVcab_01 -  Đối soát Hoa hồng, HT đại lýVTVcab_02 - Đề nghị thanh toán HH, HT đại lýVTVcab_03 - Nghiệm thu CV PTTHVTVcab_04 - Đề nghị thanh toán CP PTTH
+[class*=menu] :: Chi tiết HĐ đã nhận vềChi tiết HĐ chưa nhận vềBáo cáo tái tục theo tỷ lệBáo cáo chi tiết tái tục
+[class*=menu] :: Chi tiết HĐ đã nhận vềChi tiết HĐ chưa nhận vềBáo cáo tái tục theo tỷ lệBáo cáo chi tiết tái tục
+[class*=menu] :: Báo cáo chi tiết tích điểmBáo cáo tổng hợp điểm đã cấp
+[class*=menu] :: Báo cáo chi tiết tích điểmBáo cáo tổng hợp điểm đã cấp
+[class*=menu] :: THÊM
+[class*=menu] :: TRINH DUY KIEN (TCT)
+[class*=nav] :: CẤP ĐƠN
+[class*=nav] :: THANH TOÁN
+[class*=nav] :: BỒI THƯỜNG
+[class*=nav] :: TÁI BẢO HIỂM
+[class*=nav] :: TIỆN ÍCH
+[class*=nav] :: Hệ thống mã
+[class*=nav] :: Báo cáo
+[class*=nav] :: THÊM
