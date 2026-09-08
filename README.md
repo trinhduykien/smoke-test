@@ -43,3 +43,5 @@ Mở report sau khi chạy: `npm run report`
 ## Tài liệu
 
 - Báo cáo UAT đầy đủ: [UAT-SMOKE-REPORT.md](UAT-SMOKE-REPORT.md)
+
+**Ghi chú về các file `probe-*.js` / `scout-*`:** báo cáo có nhắc đến các probe script dùng khi khảo sát (menu, API, depth). Đây là artifact của người viết test — **không có trong repo** vì (1) nội dung đã được chuyển hóa thành 28 spec `tests/`, (2) chạy trực tiếp trên máy chưa có `.auth/uat.json` sẽ báo lỗi `ENOENT`. Muốn chạy test thì dùng luồng ở trên, KHÔNG chạy probe.

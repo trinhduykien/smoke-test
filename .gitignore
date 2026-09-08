@@ -6,3 +6,13 @@ test-results/
 *.zip
 *.log
 .claude/
+
+# Dev-artifact dùng khi viết test — giữ ở máy local, KHÔNG publish lên GitHub
+# (probe script cần .auth/uat.json, người tải repo về chạy sẽ crash ENOENT)
+probe-*.js
+probe-*.json
+probe-*.txt
+scout-app.js
+scout-result.txt
+chat.html
+wf-*.js
