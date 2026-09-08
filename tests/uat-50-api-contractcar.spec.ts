@@ -43,7 +43,8 @@ test('API ContractCar/RegisterSearch — HTTP 200, code 000, catalog các danh s
       expect(typeof el.MA, `data.${key}[].MA phải là chuỗi, không undefined`).toBe('string');
     }
   }
-  expect(data.ma_dvi_ql.length, 'danh sách mã đơn vị quản lý phải nhiều đơn vị').toBeGreaterThan(1);
+  // ma_dvi_ql phụ thuộc phạm vi đơn vị của tài khoản (tài khoản chi nhánh có thể
+  // chỉ thấy 1 đơn vị) — chỉ yêu cầu không rỗng, đã cover ở vòng lặp trên.
 });
 
 test('API ContractPublic/BrowserRegister — HTTP 200, code 000, ma_dvi + các danh sách không rỗng', async ({ context }) => {

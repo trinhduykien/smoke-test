@@ -17,7 +17,10 @@ import { test, expect } from '@playwright/test';
  */
 
 const BASE = 'https://uat-capdon.pjico.com.vn';
-const EMAIL_REAL = 'kientd.pjico@petrolimex.com.vn';
+// Email dùng cho test là tài khoản CỦA MÌNH, đọc từ .env — không hardcode email người khác.
+// Test nhập sai mật khẩu (bên dưới) chỉ chạy khi đặt QA_WRONG_PW=1: chỉ 1 lần thử,
+// tránh khóa tài khoản nếu chạy full-suite nhiều lần trong ngày.
+const EMAIL_REAL = process.env.UAT_EMAIL || '';
 const EMAIL_KHONG_TON_TAI = 'qa.khong.ton.tai.998877zz@petrolimex.com.vn';
 
 // ============================================================
@@ -107,6 +110,10 @@ test.describe('Chưa đăng nhập', () => {
 
   test('[SECURITY] Sai mật khẩu → thông báo chung chung, không tiết lộ email có trong hệ thống', async ({ page }) => {
     test.setTimeout(120000);
+    // Chỉ chạy khi đặt QA_WRONG_PW=1 và .env có tài khoản — mỗi lần chạy ĐÚNG 1 lần sai
+    // mật khẩu trên tài khoản của chính mình (thử nhiều lần = tài khoản bị khóa).
+    test.skip(!process.env.QA_WRONG_PW || !EMAIL_REAL,
+      'bỏ qua: test chỉ chạy khi đặt QA_WRONG_PW=1 và .env có UAT_EMAIL (chống khóa tài khoản)');
     await page.goto('/Home/Index', { waitUntil: 'domcontentloaded' });
 
     // ĐÚNG 1 lần nhập sai mật khẩu của chính tài khoản mình

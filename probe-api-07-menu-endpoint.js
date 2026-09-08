@@ -9,6 +9,9 @@ const PAGES = ['/Home/Index', '/ContractCar/Search', '/CategorySystem/Unit'];
 
 const MAIN_MENUS = ['Cấp đơn', 'Thanh toán', 'Bồi thường', 'Tái bảo hiểm', 'Tiện ích'];
 
+// Tên người dùng lấy từ .env (UAT_FULLNAME) — không hardcode theo 1 tài khoản
+const TEN_NSD = (process.env.UAT_FULLNAME || '').trim().toUpperCase();
+
 const CATALOG_ENDPOINTS = [
   '/ContractCar/RegisterSearch',
   '/ClaimPublic/ListRegisterOther',
@@ -37,12 +40,15 @@ const CATALOG_ENDPOINTS = [
       for (const m of MAIN_MENUS) {
         console.log(`  menu "${m}": ${lower.includes(m.toLowerCase()) ? 'CÓ' : 'KHÔNG'}`);
       }
-      console.log(`  user "TRINH DUY KIEN": ${body.toUpperCase().includes('TRINH DUY KIEN') ? 'CÓ' : 'KHÔNG'}`);
-      // xem các chuỗi giống tên user
-      const userMatches = body.match(/TRINH[^<"]{0,30}/gi) || [];
-      console.log(`  chuỗi giống tên user (TRINH...): ${JSON.stringify(userMatches.slice(0, 5))}`);
-      const kiem = body.match(/KI[EẾ][NND][^<"]{0,20}/gi) || [];
-      console.log(`  chuỗi KIEN...: ${JSON.stringify(kiem.slice(0, 5))}`);
+      if (TEN_NSD) {
+        console.log(`  user "${TEN_NSD}": ${body.toUpperCase().includes(TEN_NSD) ? 'CÓ' : 'KHÔNG'}`);
+      }
+      // xem các chuỗi giống tên user (nếu đã cấu hình UAT_FULLNAME)
+      if (TEN_NSD) {
+        const first = TEN_NSD.split(/\s+/)[0];
+        const userMatches = body.match(new RegExp(first + '[^<"]{0,30}', 'gi')) || [];
+        console.log(`  chuỗi giống tên user (${first}...): ${JSON.stringify(userMatches.slice(0, 5))}`);
+      }
     } catch (e) {
       console.log(`  NGOẠI LỆ: ${e.message.slice(0, 200)}`);
     }
@@ -62,7 +68,9 @@ const CATALOG_ENDPOINTS = [
     for (const m of MAIN_MENUS) {
       console.log(`  menu "${m}": ${lower.includes(m.toLowerCase()) ? 'CÓ' : 'KHÔNG'}`);
     }
-    console.log(`  user "TRINH DUY KIEN": ${body.toUpperCase().includes('TRINH DUY KIEN') ? 'CÓ' : 'KHÔNG'}`);
+    if (TEN_NSD) {
+      console.log(`  user "${TEN_NSD}": ${body.toUpperCase().includes(TEN_NSD) ? 'CÓ' : 'KHÔNG'}`);
+    }
   } catch (e) {
     console.log(`  NGOẠI LỆ: ${e.message.slice(0, 200)}`);
   }

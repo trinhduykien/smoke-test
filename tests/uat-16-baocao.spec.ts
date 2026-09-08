@@ -2,7 +2,7 @@ import { test, expect } from '@playwright/test';
 
 /**
  * SMOKE TEST — Phân hệ BÁO CÁO trên UAT: https://uat-capdon.pjico.com.vn
- * Tài khoản: kientd.pjico@petrolimex.com.vn (session dùng sẵn .auth/uat.json)
+ * Tài khoản: cấu hình qua .env của người chạy (session dùng sẵn .auth/uat.json)
  *
  * Phạm vi (17 trang, chỉ đọc — KHÔNG bấm nút Lưu/Thêm/Xóa/Xác nhận):
  *   - Báo cáo doanh thu chăm sóc sức khỏe   /Report/HealthReport

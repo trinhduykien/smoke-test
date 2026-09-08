@@ -17,6 +17,7 @@ export default defineConfig({
     baseURL: 'https://uat-capdon.pjico.com.vn',
     trace: 'on-first-retry',
     screenshot: 'only-on-failure',
+    video: 'retain-on-failure',
     storageState: '.auth/uat.json',
     actionTimeout: 30000,
     navigationTimeout: 90000,

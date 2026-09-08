@@ -2,7 +2,7 @@ import { test, expect } from '@playwright/test';
 
 /**
  * Smoke test phân hệ THANH TOÁN — UAT: https://uat-capdon.pjico.com.vn
- * Tài khoản: kientd.pjico@petrolimex.com.vn (session lưu trong .auth/uat.json)
+ * Tài khoản: cấu hình qua .env của người chạy (session lưu trong .auth/uat.json)
  *
  * 5 trang được kiểm tra (chỉ đọc — KHÔNG bấm nút tạo/sửa/xóa/lưu):
  *   1) /InsuranceFee/SearchPaymentFts        — Tra cứu thông tin thanh toán

@@ -3,7 +3,7 @@ import { test, expect, type Page } from '@playwright/test';
 /**
  * DEPTH TEST — Khu vực "ĐIỀU HƯỚNG QUA MENU THẬT" (slug: 01-menu-nav)
  * App UAT cấp đơn bảo hiểm PJICO: https://uat-capdon.pjico.com.vn
- * Session đăng nhập lưu sẵn .auth/uat.json (tài khoản TRINH DUY KIEN (TCT)).
+ * Session đăng nhập lưu sẵn .auth/uat.json (tài khoản lấy từ .env của người chạy).
  *
  * Mục đích: phát hiện href menu sai hoặc event menu không gắn — KHÔNG goto trực tiếp
  * tới trang đích, mà đi từ /Home/Index → hover menu cha → click mục con trong panel.

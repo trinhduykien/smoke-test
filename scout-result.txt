@@ -92,7 +92,7 @@
 [ ] {"href":"/Report/PointReport?bc=ct","text":"Báo cáo chi tiết tích điểm","id":"","cls":"item-content--decs pj-leaf-terminal pj-leaf-card pj-leaf-rea","visible":false}
 [ ] {"href":"/Report/PointReport?bc=thdv","text":"Báo cáo tổng hợp điểm đã cấp","id":"","cls":"item-content--decs pj-leaf-terminal pj-leaf-card pj-leaf-rea","visible":false}
 [x] {"href":"#","text":"THÊM","id":"","cls":"name-menu--item pj-more-toggle","visible":true}
-[x] {"href":"#","text":"TRINH DUY KIEN (TCT)","id":"pjUserMenuToggle","cls":"dropdown-toggle","visible":true}
+[x] {"href":"#","text":"<người chạy probe> (TCT)","id":"pjUserMenuToggle","cls":"dropdown-toggle","visible":true}
 [x] {"href":"/Qrcode/SearchQrcode","text":"Tạo QR cấp đơn","id":"","cls":"","visible":true}
 [x] {"href":"/Tienich/ChangePassword","text":"Đổi mật khẩu","id":"","cls":"","visible":true}
 [x] {"href":"/Home/LogOut","text":"Đăng xuất","id":"","cls":"","visible":true}
@@ -118,13 +118,13 @@ H4:
 === FORMS & INPUTS ===
 
 === MENU TEXT (nav, sidebar, menu) ===
-nav :: CẤP ĐƠN | THANH TOÁN | BỒI THƯỜNG | TÁI BẢO HIỂM | TIỆN ÍCH | THÊM | TRINH DUY KIEN (TCT)
+nav :: CẤP ĐƠN | THANH TOÁN | BỒI THƯỜNG | TÁI BẢO HIỂM | TIỆN ÍCH | THÊM | <người chạy probe> (TCT)
 .menu :: CẤP ĐƠN | THANH TOÁN | BỒI THƯỜNG | TÁI BẢO HIỂM | TIỆN ÍCH | THÊM
-.menu :: TRINH DUY KIEN (TCT)
-[class*=menu] :: CẤP ĐƠN | THANH TOÁN | BỒI THƯỜNG | TÁI BẢO HIỂM | TIỆN ÍCH | THÊM | TRINH DUY KIEN (TCT) | Kiểu số liệu | Doanh thu theo tháng | Doanh thu theo năm | Đến ngày | Đơn vị quản lý | Tất cả | Văn phòng Tổng Công ty (TCT) | PJICO An Giang (AGI) | PJICO Bắc Giang (BGI) | PJICO Bạc Liêu (BLI) | PJICO Bắc N
-[class*=menu] :: CẤP ĐƠN | THANH TOÁN | BỒI THƯỜNG | TÁI BẢO HIỂM | TIỆN ÍCH | THÊM | TRINH DUY KIEN (TCT)
-[class*=menu] :: CẤP ĐƠN | THANH TOÁN | BỒI THƯỜNG | TÁI BẢO HIỂM | TIỆN ÍCH | THÊM | TRINH DUY KIEN (TCT)
-[class*=menu] :: CẤP ĐƠN | THANH TOÁN | BỒI THƯỜNG | TÁI BẢO HIỂM | TIỆN ÍCH | THÊM | TRINH DUY KIEN (TCT)
+.menu :: <người chạy probe> (TCT)
+[class*=menu] :: CẤP ĐƠN | THANH TOÁN | BỒI THƯỜNG | TÁI BẢO HIỂM | TIỆN ÍCH | THÊM | <người chạy probe> (TCT) | Kiểu số liệu | Doanh thu theo tháng | Doanh thu theo năm | Đến ngày | Đơn vị quản lý | Tất cả | Văn phòng Tổng Công ty (TCT) | PJICO An Giang (AGI) | PJICO Bắc Giang (BGI) | PJICO Bạc Liêu (BLI) | PJICO Bắc N
+[class*=menu] :: CẤP ĐƠN | THANH TOÁN | BỒI THƯỜNG | TÁI BẢO HIỂM | TIỆN ÍCH | THÊM | <người chạy probe> (TCT)
+[class*=menu] :: CẤP ĐƠN | THANH TOÁN | BỒI THƯỜNG | TÁI BẢO HIỂM | TIỆN ÍCH | THÊM | <người chạy probe> (TCT)
+[class*=menu] :: CẤP ĐƠN | THANH TOÁN | BỒI THƯỜNG | TÁI BẢO HIỂM | TIỆN ÍCH | THÊM | <người chạy probe> (TCT)
 [class*=menu] :: CẤP ĐƠN
 [class*=menu] :: THANH TOÁN
 [class*=menu] :: Công nợ khách hàngCông nợ đồngCông nợ đại lý
@@ -159,7 +159,7 @@ nav :: CẤP ĐƠN | THANH TOÁN | BỒI THƯỜNG | TÁI BẢO HIỂM | TIỆN 
 [class*=menu] :: Báo cáo chi tiết tích điểmBáo cáo tổng hợp điểm đã cấp
 [class*=menu] :: Báo cáo chi tiết tích điểmBáo cáo tổng hợp điểm đã cấp
 [class*=menu] :: THÊM
-[class*=menu] :: TRINH DUY KIEN (TCT)
+[class*=menu] :: <người chạy probe> (TCT)
 [class*=nav] :: CẤP ĐƠN
 [class*=nav] :: THANH TOÁN
 [class*=nav] :: BỒI THƯỜNG

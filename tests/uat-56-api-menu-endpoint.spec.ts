@@ -12,7 +12,7 @@ import { test, expect, type APIResponse } from '@playwright/test';
  *       - HTTP 200
  *       - body chứa đủ 5 menu chính: Cấp đơn, Thanh toán, Bồi thường, Tái bảo hiểm, Tiện ích
  *         (match case-insensitive)
- *       - body chứa tên user TRINH DUY KIEN hoặc menu user
+ *       - body chứa tên user (UAT_FULLNAME từ .env) hoặc menu user
  *         (menu user = mục quản trị người dùng /CategorySystem/UserAccount trong fragment)
  *
  * (2) Gọi trực tiếp GET /khud/MenuRegister qua context.request.get (giữ cookies session)
@@ -29,14 +29,19 @@ import { test, expect, type APIResponse } from '@playwright/test';
  *
  * Ghi chú từ probe thật (probe-api-07-menu-endpoint.js, chạy 2026-09-04):
  *   - MenuRegister trả HTTP 200, text/html, body ~19KB chứa đủ 5 menu chính.
- *   - Fragment KHÔNG chứa tên user "TRINH DUY KIEN" — tên user nằm trong HTML
- *     của trang chính (<span id="ttin_nsd">TRINH DUY KIEN (TCT)</span>), còn fragment
+ *   - Fragment KHÔNG chứa tên user — tên user nằm trong HTML của trang chính
+ *     (<span id="ttin_nsd">tên user (TCT)</span>), còn fragment
  *     chứa menu user (/CategorySystem/UserAccount — "Mã người dùng").
  *   - Cả 4 endpoint catalog trả JSON envelope đúng 4 trường, code "000", data != null,
  *     nhưng content-type lại là "text/html" thay vì "application/json" (finding).
  */
 
 const MAIN_MENUS = ['Cấp đơn', 'Thanh toán', 'Bồi thường', 'Tái bảo hiểm', 'Tiện ích'];
+
+// Tên user hiển thị của tài khoản đang đăng nhập (span #ttin_nsd) — đọc từ .env
+// (UAT_FULLNAME, ví dụ "NGUYEN VAN QUYET"). Không đặt thì bỏ qua check tên,
+// suite vẫn chạy được với tài khoản bất kỳ.
+const TEN_NSD = (process.env.UAT_FULLNAME || '').trim().toUpperCase();
 
 // 3 trang đại diện: dashboard, tra cứu nghiệp vụ, danh mục hệ thống
 const PAGES = ['/Home/Index', '/ContractCar/Search', '/CategorySystem/Unit'];
@@ -53,7 +58,7 @@ const CATALOG_ENDPOINTS = [
  * Assert một HTML fragment menu (/khud/MenuRegister) là hợp lệ:
  * - HTTP 200
  * - chứa đủ 5 menu chính (case-insensitive)
- * - chứa tên user TRINH DUY KIEN hoặc menu user (UserAccount / "người dùng")
+ * - chứa tên user (UAT_FULLNAME) hoặc menu user (UserAccount / "người dùng")
  */
 async function expectValidMenuFragment(resp: APIResponse, context: string) {
   expect(resp.status(), `${context}: HTTP status phải là 200`).toBe(200);
@@ -67,11 +72,11 @@ async function expectValidMenuFragment(resp: APIResponse, context: string) {
   }
 
   // Tên user HOẶC menu user trong fragment
-  const hasUserName = body.toUpperCase().includes('TRINH DUY KIEN');
+  const hasUserName = TEN_NSD ? body.toUpperCase().includes(TEN_NSD) : false;
   const hasUserMenu = /useraccount|người dùng/i.test(body);
   expect(
     hasUserName || hasUserMenu,
-    `${context}: fragment phải chứa tên user "TRINH DUY KIEN" hoặc menu user (thực tế: userName=${hasUserName}, userMenu=${hasUserMenu})`
+    `${context}: fragment phải chứa tên user "${TEN_NSD || '(chưa đặt UAT_FULLNAME)'}" hoặc menu user (thực tế: userName=${hasUserName}, userMenu=${hasUserMenu})`
   ).toBe(true);
 
   console.log(`[${context}] HTTP ${resp.status()} | content-type: ${resp.headers()['content-type'] || '(trống)'} | body ${body.length} ký tự | userName=${hasUserName} | userMenu=${hasUserMenu}`);
@@ -145,7 +150,12 @@ test.describe('07 — API menu fragment /khud/MenuRegister + audit toàn bộ en
       // không nằm trong fragment; đây là nguồn tên user thực tế của app)
       const userInfo = page.locator('#ttin_nsd');
       await expect(userInfo.first(), `trang ${path} phải hiển thị tên user (#ttin_nsd)`).toBeVisible({ timeout: 30000 });
-      await expect(userInfo.first(), `tên user hiển thị phải là TRINH DUY KIEN`).toContainText(/TRINH DUY KIEN/i);
+      const hienThi = (await userInfo.first().innerText()).trim();
+      if (TEN_NSD) {
+        expect(hienThi.toUpperCase(), `trang ${path}: tên user hiển thị phải là "${TEN_NSD}"`).toContain(TEN_NSD);
+      } else {
+        expect(hienThi, `trang ${path}: #ttin_nsd phải hiển thị tên user không rỗng`).not.toBe('');
+      }
     });
   }
 

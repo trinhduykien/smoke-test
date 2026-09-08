@@ -6,7 +6,7 @@
 |---|---|
 | Ngày chạy | 2026-09-03 |
 | Môi trường | UAT (https://uat-capdon.pjico.com.vn) |
-| Tài khoản | kientd.pjico (TCT — TRINH DUY KIEN) |
+| Tài khoản | tài khoản UAT của người chạy (cấu hình .env — phạm vi TCT) |
 | Tổng số test | 108 |
 | Pass | 99 |
 | Fail | 8 |
@@ -157,7 +157,7 @@ Tổng: 53 test mới (51 pass / 2 fail — cả 2 fail đều là bug thật c�
 
 - `/Home/LogOut` và link external chính sách bảo mật vẫn CHỈ assert tồn tại + href, tuyệt đối không click (bảo toàn session — chủ đích, không phải thiếu sót).
 - Giám sát 5xx/4xx (depth-11) chỉ bao quét request phát sinh lúc LOAD trang; chưa bao gồm request chỉ nảy sinh khi submit form, hover menu hoặc thao tác nghiệp vụ.
-- Grid mới chỉ assert được trạng thái "Không có dữ liệu" (tài khoản test kientd.pjico không có hợp đồng/hồ sơ thật) — chưa kiểm tra render grid có dữ liệu, sắp xếp cột, export.
+- Grid mới chỉ assert được trạng thái "Không có dữ liệu" (tài khoản test dùng khi probe không có hợp đồng/hồ sơ thật) — chưa kiểm tra render grid có dữ liệu, sắp xếp cột, export.
 - 1 test cũ flaky còn tồn đọng: `uat-15-hethongma.spec.ts:145` (assert toBeVisible trên `<select id="ma_dvi">` gốc bị bootstrap-select ẩn) — spec cũ không được phép sửa, cần quyết định ở vòng sau.
 - Phím Escape không đóng user menu (quan sát qua probe, chưa có test riêng — đã tránh assert để không tạo fail ngoài phạm vi).
 ## 7. Phụ lục: file liên quan

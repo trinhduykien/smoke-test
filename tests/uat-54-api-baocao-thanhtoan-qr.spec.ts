@@ -67,7 +67,7 @@ test('[API 05] PaymentFtsRegister — catalog ma_bh trả đủ danh mục mã l
 });
 
 // ============ (2) Báo cáo CSSK: FindNGRegister khi mở /Report/HealthReport ============
-test('[API 05] HealthReport — FindNGRegister trả code 000, danh sách đơn vị quản lý có TCT', async ({ page }) => {
+test('[API 05] HealthReport — FindNGRegister trả code 000, danh sách đơn vị quản lý không rỗng', async ({ page }) => {
   test.setTimeout(TIMEOUT);
 
   // Request FindNGRegister (payload mã hóa client-side) bắn ngay khi trang load
@@ -85,11 +85,11 @@ test('[API 05] HealthReport — FindNGRegister trả code 000, danh sách đơn 
   expect(json.code).toBe('000');
   expect(json.systemMessage).toBeNull();
 
-  // dvi_qly: mảng đơn vị quản lý, có TCT (Tổng công ty) — đã quan sát trên UAT
+  // dvi_qly: mảng đơn vị quản lý theo phạm vi tài khoản (giống uat-51: chỉ assert
+  // không rỗng — tài khoản cấp chi nhánh có thể chỉ thấy 1 đơn vị, không nhất thiết có TCT)
   const dviQly = json.data?.dvi_qly;
   expect(Array.isArray(dviQly)).toBeTruthy();
-  expect(dviQly.length).toBeGreaterThan(1);
-  expect(dviQly.some((d: { MA: string }) => d.MA === 'TCT')).toBeTruthy();
+  expect(dviQly.length).toBeGreaterThan(0);
 
   // Mỗi đơn vị có MA/TEN hợp lệ
   for (const d of dviQly) {

@@ -2,7 +2,7 @@ import { test, expect } from '@playwright/test';
 
 /**
  * BƯỚC 4 — Smoke test phân hệ "TIỆN ÍCH" UAT: https://uat-capdon.pjico.com.vn
- * Tài khoản: kientd.pjico@petrolimex.com.vn (session lưu sẵn .auth/uat.json)
+ * Tài khoản: cấu hình qua .env của người chạy (session lưu sẵn .auth/uat.json)
  *
  * Phạm vi (6 trang, chỉ đọc — KHÔNG bấm nút Lưu/Thêm/Xóa/Duyệt):
  *   1. /ContractPublic/BrowerEnd                  — Chấm dứt hợp đồng

@@ -3,7 +3,7 @@ import { test, expect, Page, Response } from '@playwright/test';
 /**
  * SMOKE TEST — Phân hệ CẤP ĐƠN
  * App UAT: https://uat-capdon.pjico.com.vn (PJICO: Nền tảng cấp đơn bảo hiểm)
- * Tài khoản: kientd.pjico@petrolimex.com.vn (session đã lưu tại .auth/uat.json)
+ * Tài khoản: cấu hình qua .env của người chạy (session đã lưu tại .auth/uat.json)
  *
  * Phạm vi: 19 trang tra cứu/tìm kiếm hợp đồng của các nghiệp vụ cấp đơn
  *   - Xe cơ giới, xe máy, trình phí xe cơ giới

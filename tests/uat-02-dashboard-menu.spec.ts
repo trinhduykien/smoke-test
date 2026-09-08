@@ -3,7 +3,7 @@ import { test, expect, type Page } from '@playwright/test';
 /**
  * SMOKE TEST — Phân hệ "DASHBOARD & MENU & TÀI KHOẢN"
  * App UAT cấp đơn bảo hiểm PJICO: https://uat-capdon.pjico.com.vn
- * Tài khoản: kientd.pjico@petrolimex.com.vn (session lưu sẵn .auth/uat.json)
+ * Tài khoản: cấu hình qua .env của người chạy (session lưu sẵn .auth/uat.json)
  *
  * Phạm vi (3 trang + các test tương tác menu, CHỈ ĐỌC — KHÔNG bấm nút Lưu/Thêm/Xóa/Đăng xuất):
  *   1. /Home/Index              — Dashboard (doanh thu theo tháng, menu top bar)
